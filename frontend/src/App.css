@@ -1,0 +1,148 @@
+.App {
+  max-width: 1000px;
+  margin:auto; 
+  text-align: center;
+  padding: 20px;
+  background-color: whitesmoke;
+  font-family: 'Baloo Tammudu 2', cursive;
+}
+.flexbox-container {
+  display:flex;
+  margin:auto;
+  max-width:1000px;
+  flex-direction:column;
+}
+.search {
+  all: unset;
+  width: calc(100% - 30px);
+  border: 2px solid black;
+  padding: 11.4px 12px;
+  font-size: medium; 
+  cursor: pointer;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.bar__search {
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+
+.bar__camera {
+  width: 50px;
+}
+.bar__picture {
+  width:50px; 
+  height:50px; 
+}
+
+.bar__arrow {
+  width:50px; 
+  height:50px; 
+}
+
+.bar__input {
+  flex-grow: 1;
+}
+.bar__headline {
+  width:10px;
+  height:30px; 
+  padding:10px;
+  flex-grow: 1;
+}
+.bar__uploaded {
+  width:50px;
+}
+.recommendation {
+  margin: 10px;
+  background-color:coral;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.recommendation__content {
+  flex-grow: 1;
+}
+
+.recommendation__image {
+   width: 50px;
+}
+
+.recommendation__image-container {
+  width: 50px;
+  height:50px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+
+.recommendation__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.recommendation__name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.recommendation__price {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.recommendation__vendor {
+  text-align: left;
+  padding-left: 10px;
+  color:white;
+}
+
+.detailed__container {
+  /* margin: 10px;
+  padding: 1px; */
+  /* display: flex; */
+  flex-direction: row;
+}
+
+.detailed__headline {
+  flex-grow: 1;
+}
+
+.detailed__image {
+  width:30%;
+}
+
+.detailed__description {
+text-align: left;
+padding-left:10px;
+flex-grow:1; 
+}
+
+.detailed__icon {
+  text-align:right;
+  padding-right:10px; 
+}
+
+.detailed__description_container {
+  display:flex; 
+}
+
+.description__align {
+  text-align: left;
+  padding-left:10px; 
+}
+.detailed__deliveryoption {
+  border: 2px solid black;
+}
+.detailed__button {
+padding:10px;
+margin:10px;
+}
