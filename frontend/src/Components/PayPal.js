@@ -12,21 +12,21 @@ function Paypal(props) {
                         intent: "CAPTURE",
                         purchase_units: [
                             {
-                                description: props.data[0].name,
+                                description: props.data[0].name, //Product Name
                                 amount: {
                                     currency_code: "EUR",
-                                    value: props.data[0].price,
+                                    value: props.data[0].price, //Product Price
                                 },
                             },
                         ],
                     });
                 },
-                onApprove: async (data, actions) => {
+                onApprove: async (data, actions) => { 
                     const order = await actions.order.capture();
-                    console.log(order);
+                    console.log(order); //Successfull --> Print Order
                 },
                 onError: (err) => {
-                    console.log(err)
+                    console.log(err) // Error --> Print Error
                 },
             })
             .render(paypal.current);

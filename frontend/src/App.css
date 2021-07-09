@@ -6,20 +6,45 @@
   background-color: whitesmoke;
   font-family: 'Baloo Tammudu 2', cursive;
 }
+.add__space {
+  padding-top:5px;
+}
+.button {
+  width:"100px";
+  height:"30px" 
+}
+.button__login {
+  padding-top:10px;
+  padding-bottom:5px;
+  flex-grow:1;
+}
 .flexbox-container {
   display:flex;
   margin:auto;
   max-width:1000px;
   flex-direction:column;
 }
+.forgot__password {
+  text-align:right;
+}
 .search {
   all: unset;
+  border-radius:30px;
+  height: calc(100% - 40px);
   width: calc(100% - 30px);
   border: 2px solid black;
   padding: 11.4px 12px;
   font-size: medium; 
   cursor: pointer;
 }
+.registration {
+  height: calc(100% - 30px);;
+  width: calc(100% - 30px);
+  border-radius:10px;
+  padding: 10px 1px;
+  border: 1px solid grey;
+}
+
 
 .bar {
   display: flex;
@@ -57,9 +82,18 @@
 .bar__uploaded {
   width:50px;
 }
+.google__login {
+  height: calc(100% - 40px);
+  width: calc(100% - 30px);
+}
+
+/* .google__logout {
+  height: 100%;
+  width: 100%;
+} */
 .recommendation {
   margin: 10px;
-  background-color:coral;
+  background-color:#517E33;
   border-radius: 15px;
   padding: 30px;
   display: flex;
@@ -105,10 +139,10 @@
   color:white;
 }
 
+.registration__size {
+height:700px;
+}
 .detailed__container {
-  /* margin: 10px;
-  padding: 1px; */
-  /* display: flex; */
   flex-direction: row;
 }
 
@@ -145,4 +179,68 @@ flex-grow:1;
 .detailed__button {
 padding:10px;
 margin:10px;
+}
+
+.detailed__map {
+height:300px;
+width:320px;
+padding-left:5px;
+flex-grow:1;
+}
+
+.fixed__buttom_logo {
+  width:70px;
+  height: 70px;
+  }
+
+.fixed__buttom_search {
+  width: 30px;
+  height:30px;
+}
+
+.buttom__fixed_container {
+  display:flex; 
+}
+
+.fixed__person {
+  width:100px;
+  height:100%;
+}
+
+.buttom__bar_logo {
+  text-align: left;
+  padding-top:15px;
+  flex-grow:1; 
+  }
+
+.buttom__bar{
+  text-align: left;
+  padding-left:10px;
+  padding-right:10px;
+  flex-grow:1; 
+  padding-top:30px;
+    }
+.profile__size{
+ height:700px;
+}
+.user__picture {
+  padding-top:30px;
+  height: calc(100% - 90px);
+  width: calc(100% - 90px);
+}
+
+.user__property__container {
+  display:flex; 
+}
+
+.user__properties {
+  text-align:left;
+  flex-grow:1;
+  padding-left:10px;
+
+}
+
+.user__properties__data {
+  text-align:right;  
+  padding-right:10px;
 }

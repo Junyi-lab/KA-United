@@ -2,6 +2,8 @@ const express = require('express'); //Modul express
 const cors = require('cors')
 const { apiRecommendationsRoute } = require("./api/recommendations"); //Import 
 const { apiDetailedRoute} = require ("./api/detailedInformation"); 
+const {apiUserinformationRoute} = require ("./api/userinfo");
+
 
 const app = express(); //New Server with express
 app.use(cors())
@@ -18,5 +20,6 @@ app.use('/api/recommendations', apiRecommendationsRoute); //If request matches -
 
 app.use('/api/detailedInfo', apiDetailedRoute); //Fehler...
 
+app.use('/api/userInformation', apiUserinformationRoute)
 
 app.listen(3000,() => console.log('Server Listening on Port 3000'))

@@ -15,7 +15,7 @@ apiRecommendationsRoute.get('/', (req,res) => {
     if(!search) //If search empty
         return res.json({ recommendations }); //Return all rec 
     
-    if(search.includes('schuh'))
+    if(search.includes('schuh') || (search.includes('Schuh')))
     search = 'schuh'
     if (search.includes('High_Heel'))
     search = 'High Heel'
